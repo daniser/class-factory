@@ -1,0 +1,37 @@
+{
+    "name": "ttbooking/class-factory",
+    "description": "Class factory",
+    "type": "library",
+    "keywords": ["class", "object", "factory", "anonymous"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ttbooking/class-factory/issues",
+        "source": "https://github.com/ttbooking/class-factory"
+    },
+    "authors": [
+        {
+            "name": "Sergey Danilchenko",
+            "email": "s.danilchenko@ttbooking.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "TTBooking\\ClassFactory\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TTBooking\\ClassFactory\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
